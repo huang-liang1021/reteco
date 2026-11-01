@@ -1,0 +1,34 @@
+$key = "C:\Users\86177\key2"
+$account = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+icacls $key /remove "*S-1-5-21-2621344817-2419396728-2402766574-1013"
+icacls $key /grant:r "${account}:(R)"
+icacls $key
+ssh -p 12025 -i "C:\Users\86177\key2" -o IdentitiesOnly=yes huangliang@k8s.sgurad.com
+
+conda activate reteco
+cd /home/huangliang/reteco/RETECO
+
+python -u exp/qwen3_rerank_1a.py \
+  --data ../reteco_data \
+  --run-dir runs/runs_qwen3_st_bf16_lora_v4_top500 \
+  --out-dir runs/runs_qwen_reranker8b_top500 \
+  --log-dir logs/qwen_reranker8b \
+  --method qwen_reranker8b \
+  --rerank-depth 500 \
+  --output-depth 500 \
+  --data-only
+
+ python -u exp/qwen3_rerank_1a.py \
+  --data ../reteco_data \
+  --model /home/huangliang/models/Qwen3-Reranker-8B \
+  --run-dir runs/runs_qwen3_st_bf16_lora_v4_top500 \
+  --out-dir runs/runs_qwen_reranker8b_top500 \
+  --log-dir logs/qwen_reranker8b \
+  --method qwen_reranker8b \
+  --domains iota \
+  --splits train dev \
+  --gpus 0 \
+  --rerank-depth 500 \
+  --output-depth 500 \
+  --batch 8 \
+  --max-length 4096

@@ -1,0 +1,249 @@
+{
+  "schema": "reteco_track1a_query_group_v1",
+  "created_at_utc": "2026-10-17T09:39:15.695517+00:00",
+  "split": "train",
+  "data_root": "/home/huangliang/reteco/reteco_data",
+  "source_run_dir": "/home/huangliang/reteco/RETECO/runs/runs_qwen3_embedding_8b_top500_bf16",
+  "negative_source": "qwen3_embedding_8b_bf16_top500",
+  "run_prefix": "qwen3_embedding_8b",
+  "seed": 42,
+  "sampling": {
+    "original_rank_counts": {
+      "1-50": 2,
+      "51-200": 4,
+      "201-500": 2
+    },
+    "source_rank_limit": 500,
+    "within_bucket": "uniform_without_replacement",
+    "refill_order": [
+      "51-200",
+      "1-50",
+      "201-500"
+    ],
+    "shortage_policy": "keep_available_without_duplication_and_report",
+    "rng": "sha256_of_seed_domain_query_id",
+    "duplicate_text_policy": "NFKC_and_whitespace_normalized_SHA256"
+  },
+  "training_output": "/home/huangliang/reteco/RETECO/finetune_data/qwen3_embedding_8b_bf16_iota_train.json",
+  "num_domains": 1,
+  "num_queries": 7,
+  "num_positive_documents": 29,
+  "num_hard_negative_documents": 56,
+  "negative_label_status_counts": {
+    "unjudged": 56
+  },
+  "queries_with_remaining_shortage": 0,
+  "warning": "Unjudged run candidates may be false negatives; rank is not a relevance judgment.",
+  "domains": [
+    {
+      "domain": "iota",
+      "num_queries": 7,
+      "num_corpus_documents": 9680,
+      "num_positives": 29,
+      "num_hard_negatives": 56,
+      "queries_with_refill": 0,
+      "queries_with_remaining_shortage": 0,
+      "positive_label_differences": [],
+      "input_files": {
+        "examples": {
+          "path": "/home/huangliang/reteco/reteco_data/track1_tempo/iota/examples_train.jsonl",
+          "bytes": 16875,
+          "sha256": "73801f2434f005aed88b6e6bb91e109ce1d884dbf2ece3df2d8e9226156bbc9e"
+        },
+        "qrels": {
+          "path": "/home/huangliang/reteco/reteco_data/track1_tempo/iota/qrels_train.txt",
+          "bytes": 1033,
+          "sha256": "140520306501b3dad9eafeeaf975e3221c830e3719d8cf518f336577357e4635"
+        },
+        "corpus": {
+          "path": "/home/huangliang/reteco/reteco_data/track1_tempo/iota/documents.jsonl",
+          "bytes": 29264469,
+          "sha256": "967062da495b2690df4518f8a444c3b7e6175ab83674c104904b4ec3041ce57f"
+        },
+        "run": {
+          "path": "/home/huangliang/reteco/RETECO/runs/runs_qwen3_embedding_8b_top500_bf16/qwen3_embedding_8b_1a_iota_train.txt",
+          "bytes": 252926,
+          "sha256": "fa23d73ebd5fbe354589f83986ce2d99c6fc6cef83c0b9cb12b4c4fea326b4a4"
+        }
+      },
+      "queries": [
+        {
+          "query_id": "1954_803",
+          "num_positives": 3,
+          "num_negative_candidates": 497,
+          "num_selected": 8,
+          "excluded": {
+            "known_positive_id": 3
+          },
+          "available_by_bucket": {
+            "1-50": 47,
+            "51-200": 150,
+            "201-500": 300
+          },
+          "initial_shortages_by_bucket": {
+            "1-50": 0,
+            "51-200": 0,
+            "201-500": 0
+          },
+          "selected_by_bucket": {
+            "1-50": 2,
+            "51-200": 4,
+            "201-500": 2
+          },
+          "remaining_shortage": 0
+        },
+        {
+          "query_id": "2008_802",
+          "num_positives": 4,
+          "num_negative_candidates": 497,
+          "num_selected": 8,
+          "excluded": {
+            "known_positive_id": 3
+          },
+          "available_by_bucket": {
+            "1-50": 49,
+            "51-200": 148,
+            "201-500": 300
+          },
+          "initial_shortages_by_bucket": {
+            "1-50": 0,
+            "51-200": 0,
+            "201-500": 0
+          },
+          "selected_by_bucket": {
+            "1-50": 2,
+            "51-200": 4,
+            "201-500": 2
+          },
+          "remaining_shortage": 0
+        },
+        {
+          "query_id": "2049_801",
+          "num_positives": 6,
+          "num_negative_candidates": 495,
+          "num_selected": 8,
+          "excluded": {
+            "known_positive_id": 5
+          },
+          "available_by_bucket": {
+            "1-50": 48,
+            "51-200": 149,
+            "201-500": 298
+          },
+          "initial_shortages_by_bucket": {
+            "1-50": 0,
+            "51-200": 0,
+            "201-500": 0
+          },
+          "selected_by_bucket": {
+            "1-50": 2,
+            "51-200": 4,
+            "201-500": 2
+          },
+          "remaining_shortage": 0
+        },
+        {
+          "query_id": "2497_799",
+          "num_positives": 5,
+          "num_negative_candidates": 495,
+          "num_selected": 8,
+          "excluded": {
+            "known_positive_id": 5
+          },
+          "available_by_bucket": {
+            "1-50": 47,
+            "51-200": 150,
+            "201-500": 298
+          },
+          "initial_shortages_by_bucket": {
+            "1-50": 0,
+            "51-200": 0,
+            "201-500": 0
+          },
+          "selected_by_bucket": {
+            "1-50": 2,
+            "51-200": 4,
+            "201-500": 2
+          },
+          "remaining_shortage": 0
+        },
+        {
+          "query_id": "311_807",
+          "num_positives": 3,
+          "num_negative_candidates": 498,
+          "num_selected": 8,
+          "excluded": {
+            "known_positive_id": 2
+          },
+          "available_by_bucket": {
+            "1-50": 49,
+            "51-200": 150,
+            "201-500": 299
+          },
+          "initial_shortages_by_bucket": {
+            "1-50": 0,
+            "51-200": 0,
+            "201-500": 0
+          },
+          "selected_by_bucket": {
+            "1-50": 2,
+            "51-200": 4,
+            "201-500": 2
+          },
+          "remaining_shortage": 0
+        },
+        {
+          "query_id": "367_805",
+          "num_positives": 3,
+          "num_negative_candidates": 497,
+          "num_selected": 8,
+          "excluded": {
+            "known_positive_id": 3
+          },
+          "available_by_bucket": {
+            "1-50": 47,
+            "51-200": 150,
+            "201-500": 300
+          },
+          "initial_shortages_by_bucket": {
+            "1-50": 0,
+            "51-200": 0,
+            "201-500": 0
+          },
+          "selected_by_bucket": {
+            "1-50": 2,
+            "51-200": 4,
+            "201-500": 2
+          },
+          "remaining_shortage": 0
+        },
+        {
+          "query_id": "470_804",
+          "num_positives": 5,
+          "num_negative_candidates": 496,
+          "num_selected": 8,
+          "excluded": {
+            "known_positive_id": 4
+          },
+          "available_by_bucket": {
+            "1-50": 50,
+            "51-200": 150,
+            "201-500": 296
+          },
+          "initial_shortages_by_bucket": {
+            "1-50": 0,
+            "51-200": 0,
+            "201-500": 0
+          },
+          "selected_by_bucket": {
+            "1-50": 2,
+            "51-200": 4,
+            "201-500": 2
+          },
+          "remaining_shortage": 0
+        }
+      ]
+    }
+  ],
+  "training_output_sha256": "10024577904629acb2c252caecd5400e5b4aecc20a15bbdab66eadfa3c129aea"
+}

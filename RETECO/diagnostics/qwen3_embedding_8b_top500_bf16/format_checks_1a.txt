@@ -1,0 +1,104 @@
+===== qwen3_embedding_8b/top500/bitcoin_train =====
+lines: 35000  topics: 70  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/bitcoin_dev =====
+lines: 15000  topics: 30  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/cardano_train =====
+lines: 18000  topics: 36  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/cardano_dev =====
+lines: 7500  topics: 15  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/economics_train =====
+lines: 29000  topics: 58  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/economics_dev =====
+lines: 12500  topics: 25  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/genealogy_train =====
+lines: 40000  topics: 80  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/genealogy_dev =====
+lines: 17500  topics: 35  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/history_train =====
+lines: 280500  topics: 561  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/history_dev =====
+lines: 120000  topics: 240  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/hsm_train =====
+lines: 52500  topics: 105  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/hsm_dev =====
+lines: 22500  topics: 45  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/iota_train =====
+lines: 3500  topics: 7  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/iota_dev =====
+lines: 1500  topics: 3  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/law_train =====
+lines: 12000  topics: 24  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/law_dev =====
+lines: 5500  topics: 11  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/monero_train =====
+lines: 23000  topics: 46  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/monero_dev =====
+lines: 9500  topics: 19  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/politics_train =====
+lines: 52500  topics: 105  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/politics_dev =====
+lines: 22500  topics: 45  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/quant_train =====
+lines: 12000  topics: 24  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/quant_dev =====
+lines: 5000  topics: 10  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/travel_train =====
+lines: 35000  topics: 70  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/travel_dev =====
+lines: 15000  topics: 30  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/workplace_train =====
+lines: 12500  topics: 25  errors: 0  warnings: 0
+RESULT: VALID
+
+===== qwen3_embedding_8b/top500/workplace_dev =====
+lines: 5500  topics: 11  errors: 0  warnings: 0
+RESULT: VALID
+
